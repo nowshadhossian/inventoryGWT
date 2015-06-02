@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to="inventorygwt">
+	<!-- Inherit the core Web Toolkit stuff.                        -->
+	<inherits name="com.google.gwt.core.Core"/>
+	<inherits name="com.google.gwt.user.User"/>
+	<inherits name="com.google.gwt.user.theme.clean.Clean"/>
+	<inherits name="com.em.validation.Validation"/>
+	<!--
+ <inherits name="org.hibernate.validator.HibernateValidator" /> 
+	-->
+	<!--
+ <replace-with class="com.anontech.settings.MyValidatorFactory">
+  <when-type-is class="javax.validation.ValidatorFactory" />
+</replace-with> 
+	-->
+	<!-- Specify the app entry point class.                         -->
+	<entry-point class="com.anontech.client.InventoryGWT"/>
+	<!-- Specify the paths for translatable code                    -->
+	<source path="client"/>
+	<source path="dao"/>
+	<source path="db"/>
+	<source path="service"/>
+	<source path="shared"/>
+	<source path="utils"/>
+</module>

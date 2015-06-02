@@ -1,0 +1,91 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:e="urn:import:com.google.gwt.editor.ui.client">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<g:Grid width="316px" height="480px">
+			<g:row>
+				<g:customCell>
+					<g:Label text="Name"/>
+				</g:customCell>
+				<g:customCell>
+					<e:ValueBoxEditorDecorator ui:field="name" width="102px">
+			          <e:valuebox>
+			            <g:TextBox/>
+			          </e:valuebox>
+				    </e:ValueBoxEditorDecorator>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:Label text="Username"/>
+				</g:customCell>
+				<g:customCell>
+					<e:ValueBoxEditorDecorator ui:field="login">
+			          <e:valuebox>
+			            <g:TextBox/>
+			          </e:valuebox>
+				    </e:ValueBoxEditorDecorator>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:Label text="Password"/>
+				</g:customCell>
+				<g:customCell>
+					<e:ValueBoxEditorDecorator ui:field="password">
+			          <e:valuebox>
+			            <g:PasswordTextBox width="173" height="34"/>
+			          </e:valuebox>
+				    </e:ValueBoxEditorDecorator>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:Label text="Phone"/>
+				</g:customCell>
+				<g:customCell>
+					<g:TextBox ui:field="phone"/>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:Label text="Department"/>
+				</g:customCell>
+				<g:customCell>
+					<g:ListBox width="172px"/>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:Label text="Email"/>
+				</g:customCell>
+				<g:customCell>
+					<e:ValueBoxEditorDecorator ui:field="email">
+			          <e:valuebox>
+			            <g:TextBox/>
+			          </e:valuebox>
+				    </e:ValueBoxEditorDecorator>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:Label text="Role"/>
+				</g:customCell>
+				<g:customCell>
+					<g:ValueListBox ui:field="role" width="121px"/>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:Button ui:field="btnSave">Save</g:Button>
+				</g:customCell>
+			</g:row>
+		</g:Grid>
+	</g:HTMLPanel>
+</ui:UiBinder> 

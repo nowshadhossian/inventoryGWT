@@ -1,0 +1,23 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:my="urn:import:com.anontech.client.items" xmlns:f="urn:import:com.anontech.client.find">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<g:DecoratedTabPanel width="824px" height="293px">
+			<g:Tab text="Equipements">
+				<g:AbsolutePanel>
+					<f:SearchPanel /> 
+				</g:AbsolutePanel>
+			</g:Tab>
+			<g:Tab text="Add Equipement">
+				<g:AbsolutePanel >
+					<my:AddEquipement />
+				</g:AbsolutePanel>
+			</g:Tab>
+		</g:DecoratedTabPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

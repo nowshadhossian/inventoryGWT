@@ -1,0 +1,68 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:e="urn:import:com.google.gwt.editor.ui.client">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<g:Grid width="331px" height="274px">
+			<g:row>
+				<g:customCell>
+					<g:Label text="Address"/>
+				</g:customCell>
+				<g:customCell>
+					<!-- <g:TextBox ui:field="address"/> -->
+					<e:ValueBoxEditorDecorator ui:field="address">
+			          <e:valuebox>
+			            <g:TextBox/>
+			          </e:valuebox>
+			       </e:ValueBoxEditorDecorator>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:Label text="Mobile"/>
+				</g:customCell>
+				<g:customCell>
+					<!-- <g:TextBox ui:field="contactMobileNo"/> -->
+				    <e:ValueBoxEditorDecorator ui:field="contactMobileNo">
+			          <e:valuebox>
+			            <g:TextBox/>
+			          </e:valuebox>
+			       </e:ValueBoxEditorDecorator>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:Label text="contact_name"/>
+				</g:customCell>
+				<g:customCell>
+					<!-- <g:TextBox ui:field="contactName"/> -->
+					<e:ValueBoxEditorDecorator ui:field="contactName">
+			          <e:valuebox>
+			            <g:TextBox/>
+			          </e:valuebox>
+			       </e:ValueBoxEditorDecorator>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:Label text="Departent"/>
+				</g:customCell>
+				<g:customCell>
+					<g:TextBox ui:field="deptName"/>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:Button text="Save" ui:field="save"/>
+				</g:customCell>
+			</g:row>
+		</g:Grid>
+		Hello,
+		
+	</g:HTMLPanel>
+</ui:UiBinder> 

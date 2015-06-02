@@ -1,0 +1,67 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+		.header-color{
+			background-color: gray;
+		}
+		.anchor{
+			font-weight: bold;
+			text-align: center;
+			font-size: 15px;
+			cursor: pointer;
+			color: #5D5E66;
+		}
+		
+	</ui:style>
+	<g:HTMLPanel>
+		<g:StackLayoutPanel unit='PX' width="200px" height="308px" > 
+		  <g:stack>
+		    <g:header size='40' >Items</g:header>
+		    <g:VerticalPanel width="200px" height="0px">
+			   <g:Anchor styleName="{style.anchor}" ui:field="createItem">Create</g:Anchor>
+			   <g:Anchor styleName="{style.anchor}">Update</g:Anchor>
+			   <g:Anchor styleName="{style.anchor}">Find</g:Anchor>
+			   <g:Anchor styleName="{style.anchor}" ui:field="equipementPanel">Equipement</g:Anchor>
+			   <g:Anchor styleName="{style.anchor}" ui:field="vendorDeptPanel">Vendor And Department</g:Anchor>
+		     </g:VerticalPanel>
+		  </g:stack>
+		  <g:stack >
+		    <g:header size='40'>Borrow</g:header>
+		     <g:VerticalPanel width="200px">
+			   <g:Anchor  ui:field="requisition">Requisition</g:Anchor>
+			   <g:Anchor ui:field="issueItem">Issue</g:Anchor>
+			   <g:Anchor ui:field="receiveItem">Receive</g:Anchor>
+		     </g:VerticalPanel>
+		  </g:stack>
+		  <g:stack>
+		    <g:customHeader size='40'>
+		      <g:Label>Purchase</g:Label>
+		    </g:customHeader>
+		   <g:VerticalPanel width="200px">
+			    <g:Anchor ui:field="addLocalPurchase">Add Local Purchase</g:Anchor>	
+			    <g:Anchor ui:field="localPurchase">Local Purchase</g:Anchor>	
+		    	<g:Anchor>Foreign Purchase</g:Anchor>
+		    </g:VerticalPanel>
+		  </g:stack>
+		   <g:stack >
+		    <g:header size='40'>Reports</g:header>allows only text
+		     <g:VerticalPanel width="200px">
+			   <g:Anchor>Defaulter</g:Anchor>
+			   <g:Anchor>Item Location</g:Anchor>
+			   <g:Anchor>More</g:Anchor>
+		     </g:VerticalPanel>
+		  </g:stack>
+		   <g:stack >
+		    <g:header size='40'>Accounts</g:header>
+		     <g:VerticalPanel width="200px">
+			   <g:Anchor ui:field="addUser">Add User</g:Anchor>
+			   <g:Anchor ui:field="listUser">List User</g:Anchor>
+		     </g:VerticalPanel>
+		  </g:stack>
+	</g:StackLayoutPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

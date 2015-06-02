@@ -1,0 +1,136 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:p1="urn:import:com.google.gwt.user.datepicker.client">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<g:Button>Find Requisition</g:Button>
+		<g:Grid width="224px" height="101px">
+			<g:row>
+				<g:customCell>
+					<g:Label text="Items"/>
+				</g:customCell>
+				<g:customCell>
+					<g:Label text="Allowed"/>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:Label text="Camera"/>
+				</g:customCell>
+				<g:customCell>
+					<g:Label text="denied"/>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:Label text="Screw"/>
+				</g:customCell>
+				<g:customCell>
+					<g:Label text="accepted"/>
+				</g:customCell>
+			</g:row>
+		</g:Grid>
+		<g:Button ui:field="btnWithoutRequisition">Continue without requisition</g:Button>
+		<g:AbsolutePanel height="267px" ui:field="withoutRequisition" visible="false">
+			<g:at left="10" top="0">
+				<g:Button text="Add Item to list">Add Item</g:Button>
+			</g:at>
+			<g:at left="20" top="35">
+				<g:Grid width="100px" height="100px">
+					<g:row>
+						<g:customCell>
+							<g:Label text="Item"/>
+						</g:customCell>
+						<g:customCell>
+							<g:Label text="Action"/>
+						</g:customCell>
+					</g:row>
+					<g:row>
+						<g:customCell>
+							<g:Label text="Camera"/>
+						</g:customCell>
+						<g:customCell>
+							<g:Button>X</g:Button>
+						</g:customCell>
+					</g:row>
+					<g:row>
+						<g:customCell>
+							<g:Label text="Screw"/>
+						</g:customCell>
+						<g:customCell>
+							<g:Button>X</g:Button>
+						</g:customCell>
+					</g:row>
+				</g:Grid>
+			</g:at>
+			<g:at left="10" top="141">
+				<g:Grid width="100px" height="100px">
+					<g:row>
+						<g:customCell>
+							<g:Label text="Purpose"/>
+						</g:customCell>
+						<g:customCell>
+							<g:ListBox/>
+						</g:customCell>
+					</g:row>
+					<g:row>
+						<g:customCell>
+							<g:Label text="Department"/>
+						</g:customCell>
+						<g:customCell>
+							<g:TextBox/>
+						</g:customCell>
+					</g:row>
+				</g:Grid>
+			</g:at>
+		</g:AbsolutePanel>
+		<g:Grid width="324px" height="218px">
+			<g:row>
+				<g:customCell>
+					<g:Label text="Incoming Date"/>
+				</g:customCell>
+				<g:customCell>
+					<p1:DateBox/>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:Label text="Outgoing Date"/>
+				</g:customCell>
+				<g:customCell>
+					<p1:DateBox/>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:Label text="Address"/>
+				</g:customCell>
+				<g:customCell>
+					<g:TextBox/>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:Label text="Phone"/>
+				</g:customCell>
+				<g:customCell>
+					<g:TextBox/>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:Label text="Note"/>
+				</g:customCell>
+				<g:customCell>
+					<g:TextArea/>
+				</g:customCell>
+			</g:row>
+		</g:Grid>
+		<g:Button>Issue</g:Button>
+		
+	</g:HTMLPanel>
+</ui:UiBinder> 

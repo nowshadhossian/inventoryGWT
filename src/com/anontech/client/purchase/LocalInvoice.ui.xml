@@ -1,0 +1,62 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:p1="urn:import:com.google.gwt.user.datepicker.client" 
+	xmlns:my="urn:import:com.anontech.client.purchase">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<fieldset>
+			<legend>Local Purchase</legend>
+			<g:HorizontalPanel>
+				<g:Grid width="303px" height="183px">
+					<g:row/>
+					<g:row/>
+					<g:row>
+						<g:customCell>
+							<g:Label text="Purchase By"/>
+						</g:customCell>
+						<g:customCell>
+							<g:ValueListBox width="167px" ui:field="boughtBy"/>
+						</g:customCell>
+					</g:row>
+					<g:row>
+						<g:customCell>
+							<g:Label text="Buying Date"/>
+						</g:customCell>
+						<g:customCell>
+							<p1:DateBox ui:field="buyingDate"/>
+						</g:customCell>
+					</g:row>
+					<g:row>
+						<g:customCell>
+							<g:Label text="Vendor"/>
+						</g:customCell>
+						<g:customCell>
+							<g:ValueListBox width="171px" ui:field="vendor"/>
+						</g:customCell>
+					</g:row>
+					<g:row>
+						<g:customCell>
+							<g:Label text="Invoice Number"/>
+						</g:customCell>
+						<g:customCell>
+							<g:TextBox ui:field="invoiceNumber"/>
+						</g:customCell>
+					</g:row>
+					<g:row>
+						<g:customCell>
+							<g:Label/>
+						</g:customCell>
+					</g:row>
+				</g:Grid>
+				<my:LocalPurchase ui:field="purchase"></my:LocalPurchase>
+			</g:HorizontalPanel>
+			<my:ItemAddGrid height="252px" ui:field="itemEditor"></my:ItemAddGrid>
+			<g:Button ui:field="savePurchase" text="Save"></g:Button>
+		</fieldset>
+		
+	</g:HTMLPanel>
+</ui:UiBinder> 

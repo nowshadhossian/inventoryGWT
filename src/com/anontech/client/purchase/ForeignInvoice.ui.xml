@@ -1,0 +1,75 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:p1="urn:import:com.google.gwt.user.datepicker.client" 
+	xmlns:my="urn:import:com.anontech.client.purchase">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<g:Grid width="653px" height="257px">
+			<g:row>
+				<g:customCell>
+					<g:Label text="Vendor"/>
+				</g:customCell>
+				<g:customCell>
+					<g:ListBox width="170px"/>
+				</g:customCell>
+				<g:customCell>
+					<g:Label text="Airport Demurrage"/>
+				</g:customCell>
+				<g:customCell>
+					<g:DoubleBox width="172px"/>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:Label text="Buying Date"/>
+				</g:customCell>
+				<g:customCell>
+					<p1:DateBox width="177px"/>
+				</g:customCell>
+				<g:customCell>
+					<g:Label text="Airways Bill Number"/>
+				</g:customCell>
+				<g:customCell>
+					<g:TextBox/>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:Label text="Purchased By"/>
+				</g:customCell>
+				<g:customCell>
+					<g:ListBox width="183px"/>
+				</g:customCell>
+				<g:customCell>
+					<g:Label text="Airport Duty"/>
+				</g:customCell>
+				<g:customCell>
+					<g:DoubleBox width="173px"/>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:Label text="LC Number"/>
+				</g:customCell>
+				<g:customCell>
+					<g:TextBox/>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:Label text="LC Date"/>
+				</g:customCell>
+				<g:customCell>
+					<p1:DateBox width="170px"/>
+				</g:customCell>
+			</g:row>
+		</g:Grid>
+		<my:ItemAddGrid height="217px" />
+		<g:Button width="191px">Save</g:Button>
+		
+	</g:HTMLPanel>
+</ui:UiBinder> 

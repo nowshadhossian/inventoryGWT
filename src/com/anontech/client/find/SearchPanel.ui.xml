@@ -1,0 +1,19 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:p1="urn:import:com.google.gwt.user.cellview.client">
+	<ui:style>
+	</ui:style>
+	<g:HTMLPanel ui:field="htmlPanel">
+		<g:VerticalPanel width="427px" height="258px">
+			<g:HorizontalPanel width="427px" height="36px" >
+				<g:Label text="Name" height="22px" horizontalAlignment="ALIGN_CENTER"/>
+				<g:TextBox ui:field="tbxSearch"/>
+				<g:Button ui:field="test" text="test"/>
+				<g:Button text="Find" ui:field="btnFind"/>
+				<g:Button ui:field="btnEdit">Edit</g:Button>
+			</g:HorizontalPanel>
+			<p1:CellTable ui:field="cellTable" width="422px" height="285px"/>
+		</g:VerticalPanel>
+		<p1:SimplePager location="CENTER" ui:field="pager"/>
+	</g:HTMLPanel>
+</ui:UiBinder> 

@@ -1,0 +1,72 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel>
+		<fieldset>
+		  <legend>Add Item</legend>
+			<table>
+				<tr>
+					<td>Equipement</td>
+					<td><g:ValueListBox width="171px" ui:field="selEquipement"/>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><g:CheckBox text="Bulk Item" ui:field="isBulkItem"/></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+					<g:Grid width="298px" height="56px" ui:field="bulkGrid" visible="false">
+						<g:row>
+							<g:customCell>
+								<g:Label text="Quantity" width="55px"/>
+							</g:customCell>
+							<g:customCell>
+								<g:TextBox ui:field="tbxQuantity"/>
+							</g:customCell>
+						</g:row></g:Grid>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+					<g:Grid width="298px" height="56px" ui:field="singleItemGrid">
+						<g:row>
+							<g:customCell>
+								<g:Label text="Serial" width="55px"/>
+							</g:customCell>
+							<g:customCell>
+								<g:TextBox ui:field="tbxSerial"/>
+							</g:customCell>
+							
+						</g:row>
+						<g:row>
+							<g:customCell>
+								<g:Label text="Barcode"/>
+							</g:customCell>
+							<g:customCell>
+								<g:TextBox ui:field="tbxBarcode" />
+							</g:customCell>
+						</g:row>
+						<g:row/>
+					</g:Grid>
+					</td>
+				</tr>
+				<tr>
+					<td>Note</td>
+					<td><g:TextArea height="106px" characterWidth="30" ui:field="tbxNote" /></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<g:Button text="Add To Grid" ui:field="addToGrid">Save</g:Button>
+						<g:Button>Clear</g:Button>
+					</td>
+				</tr>
+			</table>
+			
+		</fieldset>
+	</g:HTMLPanel>
+</ui:UiBinder> 

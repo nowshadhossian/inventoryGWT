@@ -1,0 +1,48 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"	>
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+		.docpanel-fontsize{
+			font-size: 20px;
+		}
+		.mytoppanel {
+			background-color: powderblue;
+			background-image: url("myimage/topPanel.png");
+		}
+		.mytoppadding{
+			padding-top: 17px;
+			font-size: 21px;
+		}
+		.mytopmargin{
+			margin-top: 17px;
+		}
+		.logout-button{
+			margin-left: 8px;
+			background-color: #636263;
+			border: 2px solid gray;
+			font-size: 14px;
+			color: white;
+			width: 85px;
+			height: 30px;
+			cursor: pointer;
+		}
+		.search-tbx{
+			margin-left: 12px;
+			height: 24px;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<g:HorizontalPanel width="100%" styleName="{style.mytoppanel}">
+				<g:Label text="Inventory Site" width="496px" styleName="login-client-name"/>
+				<g:HorizontalPanel spacing="5">
+					<g:Image url="myimage/avatar.png" styleName="{style.mytoppadding}"></g:Image>
+					<g:Label text="Jet Li" styleName="{style.mytoppadding}"/>
+					<g:Button styleName="{style.mytopmargin} {style.logout-button}" ui:field="btnLogout">Log Out</g:Button>
+					<g:TextBox styleName="{style.mytopmargin} {style.search-tbx}"></g:TextBox>
+				</g:HorizontalPanel>
+		</g:HorizontalPanel> 
+	</g:HTMLPanel>
+</ui:UiBinder> 

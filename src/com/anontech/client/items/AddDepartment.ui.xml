@@ -1,0 +1,38 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<fieldset>
+			<legend>Add/Edit Department</legend>
+			<g:Grid width="331px" height="146px">
+				<g:row>
+					<g:customCell>
+						<g:Label text="Name"/>
+					</g:customCell>
+					<g:customCell>
+						<g:TextBox ui:field="tbx_name"/>
+					</g:customCell>
+				</g:row>
+				<g:row>
+					<g:customCell>
+						<g:Label text="Code"/>
+					</g:customCell>
+					<g:customCell>
+						<g:TextBox ui:field="tbx_code"/>
+					</g:customCell>
+				</g:row>
+				<g:row>
+					<g:customCell>
+						<g:Button ui:field="btnSave">Save</g:Button>
+					</g:customCell>
+				</g:row>
+			</g:Grid>
+		</fieldset>
+		
+	</g:HTMLPanel>
+</ui:UiBinder> 

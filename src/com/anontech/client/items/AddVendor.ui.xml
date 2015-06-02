@@ -1,0 +1,78 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+	   <fieldset>
+	   	<legend>Add Vendor</legend>
+			<g:Grid width="405px" height="265px">
+				<g:row>
+					<g:customCell>
+						<g:Label text="Company Name"/>
+					</g:customCell>
+					<g:customCell>
+						<g:TextBox ui:field="tbxCompanyName"/>
+					</g:customCell>
+				</g:row>
+				<g:row>
+					<g:customCell>
+						<g:Label text="Company Address"/>
+					</g:customCell>
+					<g:customCell>
+						<g:TextBox ui:field="tbxCompanyAddress"/>
+					</g:customCell>
+				</g:row>
+				<g:row>
+					<g:customCell>
+						<g:Label text="Company Phone"/>
+					</g:customCell>
+					<g:customCell>
+						<g:TextBox ui:field="tbxCompanyPhone"/>
+					</g:customCell>
+				</g:row>
+				<g:row>
+					<g:customCell>
+						<g:Label text="Fax"/>
+					</g:customCell>
+					<g:customCell>
+						<g:TextBox ui:field="tbxFax"/>
+					</g:customCell>
+				</g:row>
+				<g:row>
+					<g:customCell>
+						<g:Label text="Email"/>
+					</g:customCell>
+					<g:customCell>
+						<g:TextBox ui:field="tbxEmail"/>
+					</g:customCell>
+				</g:row>
+				<g:row>
+					<g:customCell>
+						<g:Label text="Contact Name"/>
+					</g:customCell>
+					<g:customCell>
+						<g:TextBox ui:field="tbxContactName"/>
+					</g:customCell>
+				</g:row>
+				<g:row>
+					<g:customCell>
+						<g:Label text="Contact Mobile No."/>
+					</g:customCell>
+					<g:customCell>
+						<g:TextBox ui:field="tbxContactMobile"/>
+					</g:customCell>
+				</g:row>
+				<g:row>
+					<g:customCell>
+						<g:Button ui:field="btnSave">Save</g:Button>
+					</g:customCell>
+				</g:row>
+			</g:Grid>
+		</fieldset>
+		
+	</g:HTMLPanel>
+</ui:UiBinder> 
